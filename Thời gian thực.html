@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị thời gian hiện tại</title>
+    <script>
+        function showCurrentTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            alert("Thời gian hiện tại: " + timeString);
+        }
+    </script>
+</head>
+<style>
+.my-button{
+    background-color: blue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: flex;
+    font-size: 16px;
+    margin: 0 auto;
+}
+table, th, td {
+    border: 2px solid rgb(0,0,0);
+}
+
+
+</style>
+<body>
+    <h1 style="color: blue; text-align: center;">Đồng hồ</h1>
+    <button class="my-button" onclick="showCurrentTime()">Hiển thị thời gian</button>
+    <img src="https://toytheater.com/wp-content/uploads/clock-1.gif" style="display: block; margin: 0 auto;" alt="Hình ảnh">
+    <h2 style="color: crimson; text-align: center;margin-top: 10px;"> Thời khóa biểu </h2>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Thời gian </th>
+            <th>Thứ 2 </th>
+            <th>Thứ 3 </th>
+            <th>Thứ 4 </th>
+            <th>Thứ 5 </th>
+            <th>Thứ 6 </th>
+        </tr>
+<tr>
+    <th>1</th>
+    <td><input type="time"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+</tr>
+    </table>
+    </body>
+</html>
